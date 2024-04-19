@@ -19,18 +19,18 @@ app.post("/jogo/novo", async (req, res) => {
 });
 
 app.get("/jogo/novo", (req, res) => {
-  res.sendFile(`${__dirname}/views/formJogo.html`);
+  res.sendFile(`${__dirname}/views/Jogo.html`);
 });
 
 
 app.listen(8000, () => {
-  console.log("Abridu!");
+  console.log("abriu");
 });
 
 conn
   .sync()
   .then(() => {
-    console.log("Conectado ao banco de dados com sucesso!");
+    console.log("Conectado ao banco de dados");
   })
   .catch((err) => {
     console.log("Ocorreu um erro: " + err);
